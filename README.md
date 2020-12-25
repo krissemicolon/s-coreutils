@@ -2,6 +2,14 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/krissemicolon/s-coreutils)
 ![Language](https://img.shields.io/badge/language-C-lightgrey)
 
+## Included Applications
+- secho
+- strue
+- sfalse
+- sls
+- syes
+- shostname
+
 ## Installation  
 1. Clone Repository  
 ```
