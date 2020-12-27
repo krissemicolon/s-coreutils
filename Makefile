@@ -2,26 +2,19 @@ CC=gcc
 CFLAGS=-march=native -O3 -flto -fno-fat-lto-objects -Wall
 
 output: 
-	# $(CC) src/scat.c -o bin/scat $(CFLAGS)
-	$(CC) src/syes.c -o bin/syes $(CFLAGS)
-	$(CC) src/strue.c -o bin/strue $(CFLAGS)
-	$(CC) src/sfalse.c -o bin/sfalse $(CFLAGS)
-	$(CC) src/secho.c -o bin/secho $(CFLAGS)
-	$(CC) src/sls.c -o bin/sls $(CFLAGS)
-	$(CC) src/shostname.c -o bin/shostname $(CFLAGS)
+	$(CC) src/yes.c -o bin/yes $(CFLAGS)
+	$(CC) src/true.c -o bin/true $(CFLAGS)
+	$(CC) src/false.c -o bin/false $(CFLAGS)
+	$(CC) src/echo.c -o bin/echo $(CFLAGS)
+	$(CC) src/ls.c -o bin/ls $(CFLAGS)
+	$(CC) src/hostname.c -o bin/hostname $(CFLAGS)
+	$(CC) src/date.c -o bin/date $(CFLAGS)
+	$(CC) src/rm.c -o bin/rm $(CFLAGS)
+	$(CC) src/whoami.c -o bin/whoami $(CFLAGS)
 
 clean:
 	rm -f bin/*
 
-install:
+replace:
 	mv bin/* /bin
-
-uninstall:
-	# rm -f /bin/scat
-	rm -f /bin/syes
-	rm -f /bin/strue
-	rm -f /bin/sfalse
-	rm -f /bin/secho
-	rm -f /bin/sls
-	rm -f /bin/shostname
 
