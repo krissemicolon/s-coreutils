@@ -27,7 +27,7 @@ make
 ```
 export PATH=/PATH/TO/s-coretuils/bin:$PATH
 ```
-(This line needs to present in your .bashrc / .zshrc)
+(This line needs to be present in your .bashrc / .zshrc)
 
 ## Uninstall  
 To uninstall you need to remove bin/ from $PATH.
