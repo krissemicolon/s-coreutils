@@ -23,14 +23,17 @@ cd s-coreutils
 ```
 make
 ```
-4. Moving Binaries to /bin  
+4. Add the bin directory to the $PATH  
 ```
-make install
+export PATH=/PATH/TO/s-coretuils/bin:$PATH
 ```
+(This line needs to present in your .bashrc / .zshrc)
 
 ## Uninstall  
-To uninstall you just need to run  
+To uninstall you need to remove bin/ from $PATH.
+Alternatively you also could just delete the compiled binaries from bin/
+with the 
 ```
-make uninstall
+make clean
 ```
-in the c-coreutils repository.
+command.
