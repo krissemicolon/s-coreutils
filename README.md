@@ -3,12 +3,20 @@
 ![Language](https://img.shields.io/badge/language-C-lightgrey)
 
 ## Applications
-- echo
-- true
-- false
-- ls
-- yes
-- hostname
+- [x] echo
+- [x] true
+- [x] false
+- [x] ls
+- [x] yes
+- [x] hostname
+- [x] rm
+- [ ] cp
+- [ ] mv
+- [ ] cd
+- [ ] head
+- [ ] sleep
+- [ ] sort
+- [ ] touch
 
 ## Installation  
 1. Clone Repository  
